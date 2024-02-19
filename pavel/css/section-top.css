@@ -1,0 +1,237 @@
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+
+
+
+
+
+
+
+:root {
+
+  /*--------------------header----------------------------*/
+  --header-background: #bfc3b6;
+  --Yummy: #7E8972;
+  --search-box-border: #371e12d1;
+  --search-button-and-border: #7E8972;
+  /*-------------------main-text--------------------------*/
+  --main-text: #5F4D43;
+  /*--------------------buttons---------------------------*/
+  --buttons-background: #859b96;
+  --buttons-text-color: #ffffff;
+  --profile-myposts-mysaves-btn: #60827a;
+  /*------------------section-top-------------------------*/
+  --section-top-title: #371E12;
+  --section-top-phrase: #8FA09D;
+  /*---------------------blog-----------------------------*/
+  --blog-card-background: rgb(255, 255, 251, 0.8);
+  --blog-card-border: #5F4D43;
+  --blog-card-h3: #60827a;
+  --tags: #979d9d;
+  --blog-text: #5F4D43;
+  --like-dislike-f4: #60827a;
+   /*--------------------footer---------------------------*/
+  --footer-background: #bfc3b6;
+  --footer-text-and-links: hsl(0, 0%, 100%);
+   /*---------------------post----------------------------*/
+  --post-wrapper: rgba(255, 255, 255, 0.8);
+  --post-border: #5F4D43;
+  --post-img-background: rgba(214, 211, 206, 0.6);
+  --ingredients1-and-dots2: #5F4D43;
+  --ingredients2-and-dots1: #859b96;
+  --post-text: #5F4D43;
+  /*---------------------profile--------------------------*/
+  --post-wrapper: rgba(255, 255, 255, 0.8);
+  --post-border: #5F4D43;
+  --ammounts: #5F4D43;
+  --stats-text:  #8FA09D;
+  --username: #60827a;
+  /*---------------------register--------------------------*/
+  --register-wrapper: rgba(255, 255, 255, 0.8);
+  --register-border: #5F4D43;
+  --registration-title: #8FA09D;
+  --lines: #7E8972;
+  --register-link: #859b96;
+  --input-borders: #371e12bc;
+  --google-facebook-text: #5F4D43;
+  --google-facebook-border: #859b96;
+
+}
+
+
+
+
+
+
+
+
+
+
+/* Шрифт сайта */
+body {
+  background-color: var(--color-white);
+  font-family: "Rubik", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+
+
+
+
+.section-top{
+    justify-items: center;
+    text-align: center;
+}
+
+.section-top_title{
+    color: #371E12;
+    font-size: 22px;
+    font-weight: 800;
+    opacity: .7;
+    margin-top: 30px;
+}
+
+.section-top_phraze{
+    color: #8FA09D;
+    font-weight: 800;
+    font-size: 18px;
+    margin-top: 25px;
+}
+
+.containerr{
+
+
+    display: flex;
+margin: 0 auto;
+height: 70px;
+width: 80%;
+}
+
+
+.profile_button{
+        width: 50px;
+        height: 50px;
+        border: none;
+        background-size: cover;
+        background-color: transparent;
+        cursor: pointer;
+        opacity: 0.9;
+        transition: 0.25s ease;
+        
+}
+
+
+.YUMMY{
+    color: #7E8972;
+    font-size: 30px;
+    font-weight: 1000;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 5em;
+
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.line {
+  width: 100%;
+  border-top: 3.5px solid #7E8972;
+  opacity: 0.7;
+}
+
+.logo{
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(../img/logo.png);
+  cursor: pointer;
+  width: 75px;
+  height: 75px;
+  background-size: cover;
+  transition: 0.25s ease;
+}
+
+/*-----------------------search-box--------------------*/
+.search {
+    width: 100%;
+    display: flex;
+    text-align: center;
+justify-content: center;
+align-items: center;
+
+    
+  }
+  
+  .searchTerm {
+    width: 100%;
+    border: 3.2px solid #371e12d1;
+    border-right: none;
+    padding: 5px;
+    height: 40px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #000000;
+    font-weight: 800;
+    font-size: 15;
+    max-width: 400px;
+    
+  }
+  
+  .searchTerm:focus{
+    color: #000000;
+    font-weight: 800;
+    font-size: 15;
+  }
+  
+  .searchButton {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #7E8972;
+    background: #7E8972;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+
+    background-size: cover;
+    
+  }
+
+  
+  /*Resize the wrap to see the search bar change!*/
+  .wrap{
+    width: 100%;
+ 
+
+  
+
+
+  }
+
+  /*-----------------------search-box--------------------*/
+
+
+
+
+
+
+

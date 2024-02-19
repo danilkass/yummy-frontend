@@ -1,0 +1,187 @@
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+
+
+
+
+
+
+
+:root {
+
+    /*--------------------header----------------------------*/
+    --header-background: #bfc3b6;
+    --Yummy: #7E8972;
+    --search-box-border: #371e12d1;
+    --search-button-and-border: #7E8972;
+    /*-------------------main-text--------------------------*/
+    --main-text: #5F4D43;
+    /*--------------------buttons---------------------------*/
+    --buttons-background: #859b96;
+    --buttons-text-color: #ffffff;
+    --profile-myposts-mysaves-btn: #60827a;
+    /*------------------section-top-------------------------*/
+    --section-top-title: #371E12;
+    --section-top-phrase: #8FA09D;
+    /*---------------------blog-----------------------------*/
+    --blog-card-background: rgb(255, 255, 251, 0.8);
+    --blog-card-border: #5F4D43;
+    --blog-card-h3: #60827a;
+    --tags: #979d9d;
+    --blog-text: #5F4D43;
+    --like-dislike-f4: #60827a;
+     /*--------------------footer---------------------------*/
+    --footer-background: #bfc3b6;
+    --footer-text-and-links: hsl(0, 0%, 100%);
+     /*---------------------post----------------------------*/
+    --post-wrapper: rgba(255, 255, 255, 0.8);
+    --post-border: #5F4D43;
+    --post-img-background: rgba(214, 211, 206, 0.6);
+    --ingredients1-and-dots2: #5F4D43;
+    --ingredients2-and-dots1: #859b96;
+    --post-text: #5F4D43;
+    /*---------------------profile--------------------------*/
+    --post-wrapper: rgba(255, 255, 255, 0.8);
+    --post-border: #5F4D43;
+    --ammounts: #5F4D43;
+    --stats-text:  #8FA09D;
+    --username: #60827a;
+    /*---------------------register--------------------------*/
+    --register-wrapper: rgba(255, 255, 255, 0.8);
+    --register-border: #5F4D43;
+    --registration-title: #8FA09D;
+    --lines: #7E8972;
+    --register-link: #859b96;
+    --input-borders: #371e12bc;
+    --google-facebook-text: #5F4D43;
+    --google-facebook-border: #859b96;
+ 
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.user{
+    min-height: 80%;
+    min-width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.wrapper-user{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 1200px;
+    border-radius: 10px;
+    border: 2.5px solid #5F4D43;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.user-about{
+display: flex;
+text-align: center;
+justify-content: center;
+align-items: center;
+}
+
+.about{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+} 
+
+.stat-group{
+    display: flex;
+    gap: 20px;
+    margin-left: 20px;
+}
+
+.ammount{
+    color: #5F4D43;
+    font-size: 18px;
+}
+
+.stat-text{
+    color: #8FA09D;
+    font-weight: 800;
+}
+
+.username{
+    color: #60827a;
+    font-size: 24px;
+    font-weight: 800;
+    margin-left: 20px;
+}
+
+.user-about{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.edit {
+background-color:#859b96;
+color:#ffffff;
+padding: 10px 30px;
+border-radius: 10px;
+font-weight: 800;
+margin-bottom: 20px;
+}
+
+.your-saved{
+    width: 60%;
+    justify-content: space-between;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.my{
+background-color: transparent;
+font-size: 16px;
+font-weight: 800;
+color: #60827a;
+}
+
+.my-saved{
+    background-color: transparent;
+    font-size: 16px;
+    font-weight: 800;
+    color: #60827a;
+}
+
+.posts{
+    text-align: left;
+    justify-content: left;
+    align-items:start;
+    display: flex;
+    flex-direction: column;
+}
