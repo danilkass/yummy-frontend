@@ -33,8 +33,8 @@ function Profile() {
       <Avatar
         alt="avatar"
         src={
-          user.user.avatar
-            ? `${SERVER_URL}${USERFILES_ROUTE}/${user.user?.avatar}`
+          user.user?.avatar
+            ? `${SERVER_URL}${USERFILES_ROUTE}/${user.user.avatar}`
             : `${SERVER_URL}${STATICFILES_ROUTE}/noavatar.png`
         }
         sx={{ width: 100, height: 100 }}
@@ -44,7 +44,7 @@ function Profile() {
       <div className={styles.profile}>{user.user.email}</div>
       <div className={styles.inner}>
         <Link to={REDACTOR_ROUTE}>
-          <Button variant="contained">Написать статью</Button>
+          <Button variant="contained">Написати статтю</Button>
         </Link>
         <div>
           <Button onClick={onClickLogout} variant="contained" color="error">

@@ -21,10 +21,8 @@ function Main() {
 
   const sortPosts = (postA, postB) => {
     if (tab === 0) {
-      // Сортировка по дате создания (новые посты в начале)
       return new Date(postB.post.createdAt) - new Date(postA.post.createdAt);
     } else if (tab === 1) {
-      // Сортировка по количеству просмотров (популярные посты в начале)
       return postB.post.viewsCount - postA.post.viewsCount;
     }
   };
@@ -55,7 +53,7 @@ function Main() {
         let matchCount = 0;
 
         if (searchQueries.length === 0) {
-          return { ...post, matchCount }; // Return post with matchCount
+          return { ...post, matchCount };
         }
 
         if (searchQueries.some((query) => post.post.title.toLowerCase().includes(query))) {
@@ -104,14 +102,10 @@ function Main() {
       </Tabs>
 
       {isPostLoading ? (
-        // Если посты загружаются, отображаем индикатор загрузки
-        //   <div>Loading...</div>
         [...Array(5)].map((item, index) => <Post key={index} isLoading={true} />)
       ) : filteredPosts.length === 0 ? (
-        // Если посты не найдены, отображаем сообщение
-        <Typography>За вашим запитом нічого не знайдено</Typography>
+        <Typography>Постів не знайдено</Typography>
       ) : (
-        // Если посты найдены, отображаем каждый из них
         filteredPosts.map((item, index) => (
           <Post
             key={index}

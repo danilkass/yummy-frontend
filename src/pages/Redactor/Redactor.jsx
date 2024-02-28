@@ -77,7 +77,7 @@ const Redactor = () => {
   const submitPost = async () => {
     const formData = new FormData();
 
-    // Добавляем поля формыв FormData
+    // Добавляем поля формы в FormData
     formData.append("title", title);
     formData.append("subtitle", subtitle);
     formData.append("img", img);
