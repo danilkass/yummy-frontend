@@ -1,4 +1,5 @@
-export const SERVER_URL = "http://localhost:5000";
+// export const SERVER_URL = "http://localhost:5000";
+export const SERVER_URL = "https://yummy-backend.onrender.com";
 export const API_ROUTE = "/api";
 export const USERFILES_ROUTE = "/userfiles";
 export const POSTFILES_ROUTE = "/postfiles";
