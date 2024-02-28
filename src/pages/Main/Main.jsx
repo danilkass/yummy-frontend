@@ -40,43 +40,48 @@ function Main() {
     setSearching(searchQueries.length > 0);
   }, [searchQuery]);
 
-  const filteredPosts = posts.items
-    .map((item) => {
-      const post = item;
+  let filteredPosts = posts.items;
 
-      const searchQueries = searchQuery.searchQuery
-        .toLowerCase()
-        .split(",")
-        .map((query) => query.trim())
-        .filter((query) => query);
+  if (isSearching) {
+    filteredPosts = filteredPosts
+      .map((item) => {
+        const post = item;
+        const searchQueries = searchQuery.searchQuery
+          .toLowerCase()
+          .split(",")
+          .map((query) => query.trim())
+          .filter((query) => query);
 
-      let matchCount = 0;
+        let matchCount = 0;
 
-      if (searchQueries.length === 0) {
-        return { ...post, matchCount }; // Return post with matchCount
-      }
+        if (searchQueries.length === 0) {
+          return { ...post, matchCount }; // Return post with matchCount
+        }
 
-      if (searchQueries.some((query) => post.post.title.toLowerCase().includes(query))) {
-        matchCount++;
-      }
+        if (searchQueries.some((query) => post.post.title.toLowerCase().includes(query))) {
+          matchCount++;
+        }
 
-      if (searchQueries.some((query) => post.post.subtitle.toLowerCase().includes(query))) {
-        matchCount++;
-      }
+        if (searchQueries.some((query) => post.post.subtitle.toLowerCase().includes(query))) {
+          matchCount++;
+        }
 
-      if (
-        post.ingredients.length > 0 &&
-        post.ingredients.some((ingredient) =>
-          searchQueries.some((query) => ingredient.name.toLowerCase().includes(query))
-        )
-      ) {
-        matchCount++;
-      }
+        if (
+          post.ingredients.length > 0 &&
+          post.ingredients.some((ingredient) =>
+            searchQueries.some((query) => ingredient.name.toLowerCase().includes(query))
+          )
+        ) {
+          matchCount++;
+        }
 
-      return { ...post, matchCount }; // Return post with matchCount
-    })
-    .filter((post) => post.matchCount > 0) // Filter out posts with no matches
-    .sort((a, b) => b.matchCount - a.matchCount);
+        return { ...post, matchCount };
+      })
+      .filter((post) => post.matchCount > 0)
+      .sort((a, b) => b.matchCount - a.matchCount);
+  } else {
+    filteredPosts = filteredPosts.toSorted(sortPosts);
+  }
 
   return (
     <>
@@ -107,7 +112,7 @@ function Main() {
         <Typography>За вашим запитом нічого не знайдено</Typography>
       ) : (
         // Если посты найдены, отображаем каждый из них
-        filteredPosts.toSorted(sortPosts).map((item, index) => (
+        filteredPosts.map((item, index) => (
           <Post
             key={index}
             id={item.post._id}

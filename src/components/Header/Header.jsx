@@ -70,11 +70,9 @@ export const Header = () => {
           <div className={styles.inner} style={{ gap: "20px" }}>
             {isAuth ? (
               <Link to={PROFILE_ROUTE} className={styles.inner}>
-                {/* {user && ( */}
                 <Typography pr={"10px"} fontSize={"18px"} color={"var(--secondary-color)"}>
                   {user.user?.name}
                 </Typography>
-                {/* )} */}
                 <Avatar
                   alt="avatar"
                   src={
@@ -87,7 +85,10 @@ export const Header = () => {
                 />
               </Link>
             ) : (
-              <Link to={LOGIN_ROUTE}>
+              <Link to={LOGIN_ROUTE} className={styles.inner}>
+                <Typography pr={"10px"} fontSize={"18px"} color={"var(--secondary-color)"}>
+                  Ви не авторизовані
+                </Typography>
                 <Avatar
                   alt="avatar"
                   src={`${SERVER_URL}${STATICFILES_ROUTE}/noavatar.png`}
