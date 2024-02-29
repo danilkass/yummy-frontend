@@ -1,4 +1,4 @@
-Install
+Install:
 
-npm init.
-npm start.
+npm install;
+npm start;
