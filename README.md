@@ -22,8 +22,9 @@ Frontend:
 ## Інсталяція та Запуск:
 Клонуйте репозиторій на свій комп'ютер. Встановіть необхідні пакети для frontend та backend частин за допомогою npm install відповідно.
 
-cd client
-npm start
+- cd client
+- npm install
+- npm start
 
 ## Результат роботи программи:
 https://yummy-blog.vercel.app/
