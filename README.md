@@ -35,5 +35,5 @@ https://yummy-blog.vercel.app/
 ![image](https://github.com/danilkass/yummy-frontend/assets/111860815/66f118c0-19ab-4027-894e-430159457e78)
 ![image](https://github.com/danilkass/yummy-frontend/assets/111860815/4dd361bf-0b42-4979-baa8-2e272df89874)
 
-![image](https://github.com/danilkass/yummy-frontend/assets/111860815/84efeb21-ea9d-4c9b-909f-b5f16d1214e1)
+![image](https://github.com/danilkass/yummy-frontend/assets/111860815/ad0d309b-88e4-4ea8-86b4-641504e63db7)
 ![image](https://github.com/danilkass/yummy-frontend/assets/111860815/120021eb-0b32-4003-ad13-9298efd22eeb)
