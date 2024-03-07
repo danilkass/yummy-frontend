@@ -29,7 +29,7 @@ Frontend:
 ## Результат роботи программи:
 https://yummy-blog.vercel.app/
 
-![image](https://github.com/danilkass/yummy-frontend/assets/111860815/dfabacf4-7ef8-4297-b561-90176b6aa767)
+![image](https://github.com/danilkass/yummy-frontend/assets/111860815/55cc77c2-2dd3-4813-8848-8787479ea801)
 ![image](https://github.com/danilkass/yummy-frontend/assets/111860815/3047d7dc-249f-40bd-a181-07168613f44a)
 
 ![image](https://github.com/danilkass/yummy-frontend/assets/111860815/66f118c0-19ab-4027-894e-430159457e78)
